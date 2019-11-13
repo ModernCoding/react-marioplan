@@ -3,7 +3,7 @@ import 'firebase/firestore'
 import 'firebase/analytics'
 import 'firebase/auth'
 
-var firebaseConfig = {
+export const fbConfig = {
   apiKey: "AIzaSyAf4MLFy1HjQv0rA2lW3A1q0RIHPkcttPc",
   authDomain: "mb-marioplan.firebaseapp.com",
   databaseURL: "https://mb-marioplan.firebaseio.com",
@@ -15,7 +15,7 @@ var firebaseConfig = {
 }
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(fbConfig)
 firebase.analytics()
 firebase.firestore()
 
