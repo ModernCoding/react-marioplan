@@ -1,5 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/analytics'
 import 'firebase/auth'
 
 var firebaseConfig = {
@@ -16,6 +17,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
 firebase.analytics()
-firebase.firestore().settings({ timestampsInSnapshots: true })
+firebase.firestore()
 
 export default firebase
